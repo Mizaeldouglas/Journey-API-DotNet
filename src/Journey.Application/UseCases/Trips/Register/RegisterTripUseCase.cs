@@ -1,4 +1,5 @@
 using Journey.Communication.Requests;
+using Journey.Exception.ExceptionsBase;
 
 namespace Journey.Application.UseCases.Trips.Register;
 
@@ -13,17 +14,17 @@ public class RegisterTripUseCase
     {
         if (string.IsNullOrWhiteSpace(request.Name))
         {
-            throw new ArgumentException("Nome não pode Ser Vazio");
+            throw new JourneyException("Nome não pode Ser Vazio");
         }
 
         if (request.StartDate.Date < DateTime.UtcNow.Date)
         {
-            throw new ArgumentException("A viagem não pode ser registrada para uma data passada");
+            throw new JourneyException("A viagem não pode ser registrada para uma data passada");
         }
         
         if (request.EndDate < request.StartDate)
         {
-            throw new ArgumentException("A viagem deve terminar apos a data de inicio");
+            throw new JourneyException("A viagem deve terminar apos a data de inicio");
         }
         
     }
