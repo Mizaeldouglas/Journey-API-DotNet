@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6NR7/DM9DQeFLbKRAjuGwXvIs2taId/XcLREnRibuO+V9dtcsGS43JdAKxhi8kugRD8VOvbSVkgPOZR6BBirQQ==",
+  "dgSpecHash": "7pTwraHKpX6m0qy+EEVv1QO9NuN143V9iRLsuPwHUszDKWQ56WPzYDHXGo59TW5NwwBD3jRHE6Kt01KYopIlWQ==",
   "success": true,
   "projectFilePath": "/Users/mizaeldouglasmello/Programação/WorkSpace-DotNet/Projetos/NLW-Journey/Journey/src/Journey.Api/Journey.Api.csproj",
   "expectedPackageFiles": [
@@ -90,7 +90,7 @@
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.net.stringtools/17.8.3/microsoft.net.stringtools.17.8.3.nupkg.sha512",
-    "/Users/mizaeldouglasmello/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/mizaeldouglasmello/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.visualstudio.web.codegeneration/8.0.2/microsoft.visualstudio.web.codegeneration.8.0.2.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.visualstudio.web.codegeneration.core/8.0.2/microsoft.visualstudio.web.codegeneration.core.8.0.2.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.visualstudio.web.codegeneration.design/8.0.2/microsoft.visualstudio.web.codegeneration.design.8.0.2.nupkg.sha512",
@@ -115,8 +115,9 @@
     "/Users/mizaeldouglasmello/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.6/sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.6/sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
-    "/Users/mizaeldouglasmello/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
-    "/Users/mizaeldouglasmello/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/Users/mizaeldouglasmello/.nuget/packages/swashbuckle.aspnetcore.annotations/6.6.2/swashbuckle.aspnetcore.annotations.6.6.2.nupkg.sha512",
+    "/Users/mizaeldouglasmello/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
+    "/Users/mizaeldouglasmello/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/system.codedom/5.0.0/system.codedom.5.0.0.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/system.collections.immutable/7.0.0/system.collections.immutable.7.0.0.nupkg.sha512",
