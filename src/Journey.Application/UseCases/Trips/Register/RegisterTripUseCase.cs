@@ -1,14 +1,38 @@
 using Journey.Communication.Requests;
+using Journey.Communication.Responses;
 using Journey.Exception;
 using Journey.Exception.ExceptionsBase;
+using Journey.Infrastructure;
+using Journey.Infrastructure.Entities;
 
 namespace Journey.Application.UseCases.Trips.Register;
 
 public class RegisterTripUseCase
 {
-    public void Excute(RequestRegisterTripJson request)
+
+
+    public ResponseShortTripJson Excute(RequestRegisterTripJson request)
     {
+        var dbContext = new JourneyDbContext();
+        
         Validade(request);
+        var tripEntity = new Trip
+        {
+          Name  = request.Name,
+          StartDate = request.StartDate,
+          EndDate = request.EndDate
+        };
+        
+        dbContext.Trips.Add(tripEntity);
+        dbContext.SaveChanges();
+
+        return new ResponseShortTripJson
+        {
+            EndDate = tripEntity.EndDate,
+            StartDate = tripEntity.StartDate,
+            Name = tripEntity.Name,
+            Id = tripEntity.Id
+        };
     }
 
     private void Validade(RequestRegisterTripJson request)
