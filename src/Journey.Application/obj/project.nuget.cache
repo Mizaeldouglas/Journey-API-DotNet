@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WbpTZsPPxSZ6VwplVt911D3UiwS65WM+b45k7UtPHUAU/CqvpnPRChuZU8Gj2bAbKvmZ2O5vFkXdXAdItC+JhA==",
+  "dgSpecHash": "JfoZDj8oW6zzMFsZoiJI56qFTU9Qug/KicT8zRXaC0ZTMJgHKxqHMAJWdRXR1Lpv8alwcOPk1i6Xahl9REpnYw==",
   "success": true,
   "projectFilePath": "/Users/mizaeldouglasmello/Programação/WorkSpace-DotNet/Projetos/NLW-Journey/Journey/src/Journey.Application/Journey.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/mizaeldouglasmello/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.data.sqlite.core/8.0.6/microsoft.data.sqlite.core.8.0.6.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.entityframeworkcore/8.0.6/microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.6/microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",

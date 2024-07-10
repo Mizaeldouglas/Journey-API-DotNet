@@ -12,4 +12,9 @@ public class JourneyDbContext : DbContext
     {
         optionsBuilder.UseSqlite("Data Source=JourneyDatabase.db");
     }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Activity>().ToTable("Activities");
+    }
 }

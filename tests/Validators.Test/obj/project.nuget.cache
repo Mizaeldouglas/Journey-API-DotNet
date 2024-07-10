@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kMZPXkdnbE3ZcWY4POoiTg5lhH9/UkcjjTl+TlEz2ViCmh2M5649SnF7T8j8fhgvLWqr5daonSd5pZBoHwnCfg==",
+  "dgSpecHash": "nEtw9pBYw7XZ4yGZIXob0MS3kAOvwtIfiB0+9Uf+1zFecHT9aZLgtL/90OUoVAtM16IWuUmy5iHzhACGNB1nuw==",
   "success": true,
   "projectFilePath": "/Users/mizaeldouglasmello/Programação/WorkSpace-DotNet/Projetos/NLW-Journey/Journey/tests/Validators.Test/Validators.Test.csproj",
   "expectedPackageFiles": [
     "/Users/mizaeldouglasmello/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
+    "/Users/mizaeldouglasmello/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.codecoverage/17.8.0/microsoft.codecoverage.17.8.0.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.data.sqlite.core/8.0.6/microsoft.data.sqlite.core.8.0.6.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/microsoft.entityframeworkcore/8.0.6/microsoft.entityframeworkcore.8.0.6.nupkg.sha512",

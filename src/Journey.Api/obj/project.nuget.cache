@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7pTwraHKpX6m0qy+EEVv1QO9NuN143V9iRLsuPwHUszDKWQ56WPzYDHXGo59TW5NwwBD3jRHE6Kt01KYopIlWQ==",
+  "dgSpecHash": "ZQGLpB2Q+yD2R7x9iClwpxKf5/Hx2+VGsHm6E4Lqx2vo6RJ0RzU15yM5rUMIwXGrA99+NM+X+W7v76drgjRZjw==",
   "success": true,
   "projectFilePath": "/Users/mizaeldouglasmello/Programação/WorkSpace-DotNet/Projetos/NLW-Journey/Journey/src/Journey.Api/Journey.Api.csproj",
   "expectedPackageFiles": [
+    "/Users/mizaeldouglasmello/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/mizaeldouglasmello/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",

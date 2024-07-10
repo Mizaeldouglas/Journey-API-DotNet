@@ -1,4 +1,5 @@
 using System.Reflection;
+using Journey.Api.Filters;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,11 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(xmlPath);
     options.EnableAnnotations();
     options.SwaggerDoc("v1", new OpenApiInfo { Title = "Journey Api", Version = "V1", Description = "API para gerenciamento de viagens. Feito no NLW da Rocketseat" });
+});
+
+builder.Services.AddMvc(config =>
+{
+    config.Filters.Add(new ExceptionFilter());
 });
 
 var app = builder.Build();
