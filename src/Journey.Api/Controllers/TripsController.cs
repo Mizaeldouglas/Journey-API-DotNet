@@ -1,7 +1,3 @@
-using Journey.Application.UseCases.Trips.Activities;
-using Journey.Application.UseCases.Trips.Activities.Complete;
-using Journey.Application.UseCases.Trips.Activities.Delete;
-using Journey.Application.UseCases.Trips.Activities.Register;
 using Journey.Application.UseCases.Trips.Delete;
 using Journey.Application.UseCases.Trips.GetAll;
 using Journey.Application.UseCases.Trips.GetById;
@@ -74,13 +70,11 @@ public class TripsController : ControllerBase
     [Route("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status404NotFound)]
-    public IActionResult DeleteActivity([FromRoute] Guid id)
+    public IActionResult Delete([FromRoute] Guid id)
     {
         var useCase = new DeleteTripByIdUseCase();
         useCase.Execute(id);
         return NoContent();
     }
-    
-    
     
 }
