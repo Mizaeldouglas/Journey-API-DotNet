@@ -25,9 +25,16 @@ Para executar a Journey API em seu ambiente local, siga os passos abaixo:
 5. A aplicação estará disponível em `http://localhost:{port}`.
 
 ## Endpoints da API
+
+### Trips
 - `POST /v1/trips`: Cadastra uma nova viagem.
 - `GET /v1/trips`: Lista todas as viagens cadastradas.
-- `POST /v1/trips/{tripId}/activity`: Cadastra uma nova atividade em uma viagem específica.
+- `GET /v1/trips/{id}`: Retorna uma viagem específica.
+- `DELETE /v1/trips/{id}`: Deleta uma viagem específica.
+
+### Activity
+
+- `POST /v1/trips/{tripId}/activity`: Registra uma nova atividade para uma viagem específica.
 - `PUT /v1/trips/{tripId}/activity/{activityId}/complete`: Marca uma atividade como concluída.
 - `DELETE /v1/trips/{tripId}/activity/{activityId}`: Deleta uma atividade específica de uma viagem.
 
