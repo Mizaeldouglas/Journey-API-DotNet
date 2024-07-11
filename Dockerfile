@@ -12,7 +12,7 @@ COPY ["src/Journey.Application/Journey.Application.csproj", "Journey.Application
 COPY ["src/Journey.Communication/Journey.Communication.csproj", "Journey.Communication/"]
 COPY ["src/Journey.Exception/Journey.Exception.csproj", "Journey.Exception/"]
 COPY ["src/Journey.Infrastructure/Journey.Infrastructure.csproj", "Journey.Infrastructure/"]
-RUN dotnet restore "Journey.Api/Journey.Api.csproj"
+RUN dotnet restore "./Journey.Api/Journey.Api.csproj"
 COPY . .
 WORKDIR "/src/Journey.Api"
 RUN dotnet build "src/Journey.Api/Journey.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
