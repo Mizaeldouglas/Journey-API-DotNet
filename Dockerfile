@@ -15,11 +15,11 @@ COPY ["src/Journey.Infrastructure/Journey.Infrastructure.csproj", "Journey.Infra
 RUN dotnet restore "Journey.Api/Journey.Api.csproj"
 COPY . .
 WORKDIR "/src/Journey.Api"
-RUN dotnet build "Journey.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "src/Journey.Api/Journey.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "Journey.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "src/Journey.Api/Journey.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
