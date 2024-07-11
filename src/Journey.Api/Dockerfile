@@ -1,0 +1,27 @@
+﻿FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER $APP_UID
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8081
+
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+COPY ["src/Journey.Api/Journey.Api.csproj", "src/Journey.Api/"]
+COPY ["src/Journey.Application/Journey.Application.csproj", "src/Journey.Application/"]
+COPY ["src/Journey.Communication/Journey.Communication.csproj", "src/Journey.Communication/"]
+COPY ["src/Journey.Exception/Journey.Exception.csproj", "src/Journey.Exception/"]
+COPY ["src/Journey.Infrastructure/Journey.Infrastructure.csproj", "src/Journey.Infrastructure/"]
+RUN dotnet restore "src/Journey.Api/Journey.Api.csproj"
+COPY . .
+WORKDIR "/src/src/Journey.Api"
+RUN dotnet build "Journey.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "Journey.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "Journey.Api.dll"]

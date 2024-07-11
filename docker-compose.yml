@@ -1,0 +1,10 @@
+﻿version: "3.7"
+services:
+  journey.api:
+    container_name: journey_api
+    image: journey.api
+    ports:
+      - "8075:8080"
+    build:
+      context: .
+      dockerfile: src/Journey.Api/Dockerfile
