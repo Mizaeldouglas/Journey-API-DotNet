@@ -6,5 +6,5 @@ services:
     ports:
       - "8075:8080"
     build:
-      context: .
+      context: ./src/Journey.Api
       dockerfile: src/Journey.Api/Dockerfile
