@@ -7,11 +7,11 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Journey.Api/Journey.Api.csproj", "Journey.Api/"]
-COPY ["Journey.Application/Journey.Application.csproj", "Journey.Application/"]
-COPY ["Journey.Communication/Journey.Communication.csproj", "Journey.Communication/"]
-COPY ["Journey.Exception/Journey.Exception.csproj", "Journey.Exception/"]
-COPY ["Journey.Infrastructure/Journey.Infrastructure.csproj", "Journey.Infrastructure/"]
+COPY ["src/Journey.Api/Journey.Api.csproj", "Journey.Api/"]
+COPY ["src/Journey.Application/Journey.Application.csproj", "Journey.Application/"]
+COPY ["src/Journey.Communication/Journey.Communication.csproj", "Journey.Communication/"]
+COPY ["src/Journey.Exception/Journey.Exception.csproj", "Journey.Exception/"]
+COPY ["src/Journey.Infrastructure/Journey.Infrastructure.csproj", "Journey.Infrastructure/"]
 RUN dotnet restore "Journey.Api/Journey.Api.csproj"
 COPY . .
 WORKDIR "/src/Journey.Api"
