@@ -5,7 +5,7 @@ services:
     container_name: journey_api
     build:
       context: .
-      dockerfile: src/Journey.Api/Dockerfile
+      dockerfile: Dockerfile
     image: journey.api
     ports:
       - "8075:8080"
