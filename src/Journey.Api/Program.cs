@@ -13,21 +13,22 @@ builder.Services.AddSwaggerGen(options =>
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     options.IncludeXmlComments(xmlPath);
     options.EnableAnnotations();
-    options.SwaggerDoc("v1", new OpenApiInfo { Title = "Journey Api", Version = "V1", Description = "API para gerenciamento de viagens. Feito no NLW da Rocketseat" });
+    options.SwaggerDoc("v1",
+        new OpenApiInfo
+        {
+            Title = "Journey Api", Version = "V1",
+            Description = "API para gerenciamento de viagens. Feito no NLW da Rocketseat"
+        });
 });
 
-builder.Services.AddMvc(config =>
-{
-    config.Filters.Add(new ExceptionFilter());
-});
+builder.Services.AddMvc(config => { config.Filters.Add(new ExceptionFilter()); });
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
 
 app.UseHttpsRedirection();
 
