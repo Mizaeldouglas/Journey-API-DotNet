@@ -6,6 +6,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: journey.api
+    image: journey_api
     ports:
       - "8075:8080"
