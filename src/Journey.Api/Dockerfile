@@ -14,7 +14,7 @@ COPY ["src/Journey.Exception/Journey.Exception.csproj", "src/Journey.Exception/"
 COPY ["src/Journey.Infrastructure/Journey.Infrastructure.csproj", "src/Journey.Infrastructure/"]
 RUN dotnet restore "src/Journey.Api/Journey.Api.csproj"
 COPY . .
-WORKDIR "/src/src/Journey.Api"
+WORKDIR "/src/Journey.Api"
 RUN dotnet build "Journey.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
